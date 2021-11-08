@@ -1,0 +1,13 @@
+<h1>{{ title }}</h1> <!-- 직원 테이블 -->
+<table>
+    <tr>
+        <td>과목명</td>
+        <td>과목번호</td>
+    </tr>
+    {{#each subject}} <!-- 데이터 있을 때마다 행 추가 -->
+    <tr>
+        <td>{{Sname}}</td>
+        <td>{{Snumber}}</td>
+    </tr>
+    {{/each}}
+</table>

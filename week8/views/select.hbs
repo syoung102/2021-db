@@ -1,0 +1,49 @@
+<h1>{{ title }}</h1> <!-- 직원 테이블 -->
+
+<table>
+    <tr> <!-- 행 -->
+        <td>Fname</td> <!-- 열 -->
+        <td>Minit</td>
+        <td>Lname</td>
+        <td>Ssn</td>
+        <td>Bdate</td>
+        <td>Address</td>
+        <td>Sex</td>
+        <td>Salary</td>
+        <td>Super_ssn</td>
+        <td>Dno</td>
+    </tr>
+    {{#each employee}} <!-- 데이터 있을 때마다 행 추가 -->
+    <tr>
+        <td>{{Fname}}</td>
+        <td>{{Minit}}</td>
+        <td>{{Lname}}</td>
+        <td>{{Ssn}}</td>
+        <td>{{Bdate}}</td>
+        <td>{{Address}}</td>
+        <td>{{Sex}}</td>
+        <td>{{Salary}}</td>
+        <td>{{Super_ssn}}</td>
+        <td>{{Dno}}</td>
+    </tr>
+    {{/each}}
+</table>
+
+<h1>{{ title2 }}</h1> <!-- 부서 테이블 -->
+
+<table>
+    <tr>
+        <td>Dname</td>
+        <td>Dnumber</td>
+        <td>Mgr_ssn</td>
+        <td>Mgr_start_date</td>
+    </tr>
+    {{#each department}} <!-- 데이터 있을 때마다 행 추가 -->
+    <tr>
+        <td>{{Dname}}</td>
+        <td>{{Dnumber}}</td>
+        <td>{{Mgr_ssn}}</td>
+        <td>{{Mgr_start_date}}</td>
+    </tr>
+    {{/each}}
+</table>

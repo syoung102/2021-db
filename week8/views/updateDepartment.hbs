@@ -1,0 +1,21 @@
+<h1>{{ title }}</h1> <!-- 부서 테이블 갱신 -->
+
+<table>
+    <tr> <!-- 행 -->
+        <td>Dname</td>
+        <td>Dnumber</td>
+        <td>Mgr_ssn</td>
+        <td>Mgr_start_date</td>
+    </tr>
+    {{#each dept_res}}  <!-- 데이터 있을 때마다 반복 -->
+    <form method="post">
+    <tr>
+        <td><input type="text" name="dname" placeholder={{Dname}}></td>
+        <td>{{Dnumber}}</td>
+        <td>{{Mgr_ssn}}</td>
+        <td>{{Mgr_start_date}}</td>
+        <td><input type="submit" value="수정" formaction="/update/department"></td>
+    </tr>
+    </form>
+    {{/each}}
+</table>
