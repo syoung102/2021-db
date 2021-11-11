@@ -71,11 +71,14 @@ insert into EMPLOYEE values('Mark', 'M', 'Lee', 12181029, '1999/8/1', 'Canada', 
 
 insert into DEPARTMENT values('마케팅부', 1, 12181029, '2018/2/1');
 ```
-insert 문으로 Employee 테이블과 Department 테이블에 값을 삽입한 결과는 다음과 같다.
+insert 문으로 Employee 테이블과 Department 테이블에 값을 삽입한 결과는 다음과 같다.<br>
+Super_ssn는 NULL 값이 될 수 있으므로 NULL로 설정하였다.
 
 Fname|Minit|Lname|Ssn|Bdate|Address|Sex|Salary|Super_ssn|Dno|
 ---|---|---|---|---|---|---|---|---|---|
 Mark|M|Lee|12181029|1999-08-01|Canada|M|300||1|
+
+NULL 값으로 설정한 부분은 비어있다.
 
 Dname|Dnumber|Mgr_ssn|Mgr_start_date|
 ---|---|---|---|
@@ -155,4 +158,3 @@ insert 문으로 Subject 테이블에 값을 삽입한 결과는 다음과 같�
 Sname|Snumber|
 ---|---|
 데이터베이스|ICE4016|
-
